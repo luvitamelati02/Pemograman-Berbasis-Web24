@@ -7,7 +7,11 @@ Route::get('/home', function () {
 });
 
 Route::get('/profile', function () {
-    return view('profile');
+    return view('profile', [
+        "nama" => "Luvita Melati",
+        "nohp" => "08225210157",
+        "foto" => "img/luvita.jpg",
+    ]);
 });
 
 Route::get('/berita', function () {

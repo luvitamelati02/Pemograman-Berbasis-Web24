@@ -130,6 +130,7 @@ nav a.active {
 <body>
   <header>
     <h1>PROFIL - LUVITA</h1>
+    <img src="{{ $foto }}" width="300px" />
   </header>
 
   <nav>

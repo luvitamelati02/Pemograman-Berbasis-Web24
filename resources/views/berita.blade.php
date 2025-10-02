@@ -105,13 +105,11 @@
 
   <div class="container">
     <div class="card">
-      <h2>Menjadi Ketua Panitia MASTA FTIK Tahun 2025</h2>
+      <h2>Ketua Panitia MASTA FTIK Tahun 2025</h2>
       <p class="date">11 - 13 September 2025</p>
 
       <p>Telah menjadi <b>Ketua Panitia Masa Ta’aruf (MASTA) 
         <p>Fakultas Teknik dan Ilmu Komputer Universitas Muhammadiyah Semarang Tahun 2025</p></b>
-      
-      <p>Alhamdulillah, kegiatan ini berjalan dengan lancar, meriah, dan penuh semangat.</p>
 
       <p>Acara ini mengusung jargon: <i>"Satu Teknik, Satu Gerak Solid dalam Aksi, Kritis dalam Pikir. FTIK Berkemajuan!"</i>. 
       Jargon ini menjadi semangat pemersatu seluruh Mahatigra Tahun 2025.</p>
@@ -121,6 +119,18 @@
       <p>Serta, Mahatigra 2025 agar bisa aktif, peka terhadap masalah sosial, dan berani mengkritisi. Namun, semua dilakukan dengan cara yang elegan dan konstruktif, hingga terbentuk budaya berpikir kritis dan tidak apatis.</p>
 
       <p>Pada akhirnya, segala bentuk aksi harus selalu didasari pemikiran yang matang dan intelektual. Dengan begitu, Mahatigra 2025 tidak hanya bergerak spontan, tetapi juga memiliki landasan logis dan ilmiah.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h2>Ketua Pimpinan Daerah Ikatan Pelajar Muhammadiyah Kabupaten Grobogan</h2>
+      <p class="date">Periode 2025 - 2027</p>
+
+      <p>Menjabat sebagai <b>Ketua Pimpinan Daerah Ikatan Pelajar Muhammadiyah Kabupaten Grobogan Periode 2025 - 2027</b></p>
+      <p>Menjabat sebagai Ketua Umum PD IPM Grobogan periode berjalan, dengan tanggung jawab mengkoordinasikan program kerja, 
+        mengelola kaderisasi, serta memastikan peran IPM sebagai organisasi pelajar yang progresif dan bermanfaat bagi masyarakat. 
+      <p>Fokus utama adalah mencetak pelajar yang berkarakter, berdaya pikir kritis, dan memiliki kepedulian sosial yang tinggi.</p>
     </div>
   </div>
 </body>

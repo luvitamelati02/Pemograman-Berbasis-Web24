@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontak | Luvi</title>
+  <title>Home | Luvi</title>
   <style>
     body {
       margin: 0;
@@ -22,42 +22,46 @@
 
     header {
       text-align: center;
-      padding: 2.5rem 1rem;
+      padding: 3rem 1rem;
     }
 
     header h1 {
-      margin: 0.5rem 0;
+      margin: 1rem 0 0.5rem;
       font-size: 2.5rem;
       color: #fff;
       text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
     }
 
+    header p {
+      font-size: 1.2rem;
+      color: #f5f5f5;
+    }
+
     nav {
       display: flex;
       justify-content: center;
-      gap: 1rem;
+      gap: 1.5rem;
       margin-top: 1rem;
     }
 
     nav a {
       text-decoration: none;
-      background: rgba(255,255,255,0.9);
+      background: rgba(255,255,255,0.8);
       padding: 10px 18px;
       border-radius: 12px;
       color: #333;
       font-weight: bold;
       transition: 0.3s;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
     nav a:hover {
       background: #ff6f61;
-      color: #fff;
+      color: white;
       transform: scale(1.05);
     }
 
     .container {
-      max-width: 700px;
+      max-width: 900px;
       margin: 2rem auto;
       padding: 1rem;
     }
@@ -78,59 +82,50 @@
 
     .card h2 {
       margin-top: 0;
-      margin-bottom: 1rem;
       color: #ff6f61;
-      text-align: center;   /* <-- Biar ketengah */
     }
 
-    .socials {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 1.5rem;
-      flex-wrap: wrap;
-    }
-
-    .socials a {
-      text-decoration: none;
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 10px 18px;
+      background: linear-gradient(45deg, #ff9a9e, #fbc2eb);
       color: white;
-      padding: 10px 15px;
-      border-radius: 10px;
+      border-radius: 12px;
+      text-decoration: none;
       font-weight: bold;
       transition: 0.3s;
-      display: inline-block;
     }
 
-    .socials a:nth-child(1) { background: #E1306C; } /* IG */
-    .socials a:nth-child(2) { background: #D44638; } /* Email */
-    .socials a:nth-child(3) { background: #1DB954; } /* Spotify */
-    .socials a:nth-child(4) { background: #333333; } /* GitHub */
-
-    .socials a:hover {
-      opacity: 0.8;
+    .btn:hover {
+      opacity: 0.9;
       transform: scale(1.05);
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>KONTAK - LUVITA</h1>
+    <h1>HOME - LUVITA</h1>
+    
     <nav>
-      <a href="http://localhost:8000/home">Home</a>
       <a href="http://localhost:8000/profile">Profil</a>
       <a href="http://localhost:8000/berita">Berita</a>
+      <a href="http://localhost:8000/contact">Kontak</a>
     </nav>
   </header>
 
   <div class="container">
     <div class="card">
-      <h2>Media Sosial</h2>
-      <div class="socials">
-        <a href="https://www.instagram.com/luvitamelati" target="_blank">Instagram</a>
-        <a href="mailto:melatiluvita31@gmail.com">Email</a>
-        <a href="https://open.spotify.com/user/31et67hxgg33uuq3a3s4bpbsdtlm" target="_blank">Spotify</a>
-        <a href="https://github.com/luvitamelati02" target="_blank">GitHub</a>
-      </div>
+      @yield('content')
+    </div>
+
+    <div class="card">
+      <h2>Apa yang Bisa Kamu Temukan?</h2>
+      <ul>
+        <li>Informasi tentang Luvita</li>
+        <li>Hobi dan minat Luvita</li>
+        <li>Kontak sosial media dan project</li>
+      </ul>
     </div>
   </div>
 </body>
