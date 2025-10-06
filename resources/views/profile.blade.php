@@ -143,7 +143,7 @@ nav a.active {
   <div class="container">
     <div class="card">
       <h2>Tentang Luvita</h2>
-      <p>Halo! Aku adalah Mahasiswi Semester 2 Program Studi S1 Teknologi Informasi
+      <p>Halo! Aku adalah Mahasiswi Semester 3 Program Studi S1 Teknologi Informasi
         Universitas Muhammadiyah Semarang. Sering dipanggil Luvita, berasal dari Kota Purwodadi, Jawa Tengah.
       </p>
     </div>
