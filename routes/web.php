@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Http; 
 use Illuminate\Support\Facades\Route;
 
 Route::get('/home', function () {
@@ -15,7 +16,13 @@ Route::get('/profile', function () {
 });
 
 Route::get('/berita', function () {
-    return view('berita');
+    return view('berita', 
+    [
+        "nama" => "Berita 1",
+        "slug" => "berita-1",
+        "author" => "Luvita Melati",
+
+    ]);
 });
 
 Route::get('/contact', function () {
