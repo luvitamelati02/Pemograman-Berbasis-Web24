@@ -97,41 +97,18 @@
     <h1>BERITA - LUVITA</h1>
     
     <nav>
-      <a href="http://localhost:8000/home">Home</a>
+      <a href="http://localhost:8000/berita1">Berita 1</a>
+      <a href="http://localhost:8000/berita2">Berita 2</a>
+      <a href="http://localhost:8000/berita3">Berita 3</a>
+    </nav>
+
+<nav>
       <a href="http://localhost:8000/profile">Profil</a>
+      <a href="http://localhost:8000/berita">Berita</a>
       <a href="http://localhost:8000/contact">Kontak</a>
     </nav>
+
   </header>
 
-  <div class="container">
-    <div class="card">
-      <h2>Ketua Panitia MASTA FTIK Tahun 2025</h2>
-      <p class="date">11 - 13 September 2025</p>
-
-      <p>Telah menjadi <b>Ketua Panitia Masa Ta’aruf (MASTA) 
-        <p>Fakultas Teknik dan Ilmu Komputer Universitas Muhammadiyah Semarang Tahun 2025</p></b>
-
-      <p>Acara ini mengusung jargon: <i>"Satu Teknik, Satu Gerak Solid dalam Aksi, Kritis dalam Pikir. FTIK Berkemajuan!"</i>. 
-      Jargon ini menjadi semangat pemersatu seluruh Mahatigra Tahun 2025.</p>
-
-      <p>Dengan harapan, seluruh mahasiswa dapat bersatu tanpa memandang jurusan, sehingga tercipta rasa kebersamaan, identitas yang kuat, dan semangat solidaritas sebagai satu keluarga besar FTIK. Dengan kebersamaan ini, mahasiswa FTIK 2025 bisa menjadi motor penggerak perubahan positif, baik di kampus maupun masyarakat.</p>
-
-      <p>Serta, Mahatigra 2025 agar bisa aktif, peka terhadap masalah sosial, dan berani mengkritisi. Namun, semua dilakukan dengan cara yang elegan dan konstruktif, hingga terbentuk budaya berpikir kritis dan tidak apatis.</p>
-
-      <p>Pada akhirnya, segala bentuk aksi harus selalu didasari pemikiran yang matang dan intelektual. Dengan begitu, Mahatigra 2025 tidak hanya bergerak spontan, tetapi juga memiliki landasan logis dan ilmiah.</p>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="card">
-      <h2>Ketua Pimpinan Daerah Ikatan Pelajar Muhammadiyah Kabupaten Grobogan</h2>
-      <p class="date">Periode 2025 - 2027</p>
-
-      <p>Menjabat sebagai <b>Ketua Pimpinan Daerah Ikatan Pelajar Muhammadiyah Kabupaten Grobogan Periode 2025 - 2027</b></p>
-      <p>Menjabat sebagai Ketua Umum PD IPM Grobogan periode berjalan, dengan tanggung jawab mengkoordinasikan program kerja, 
-        mengelola kaderisasi, serta memastikan peran IPM sebagai organisasi pelajar yang progresif dan bermanfaat bagi masyarakat. 
-      <p>Fokus utama adalah mencetak pelajar yang berkarakter, berdaya pikir kritis, dan memiliki kepedulian sosial yang tinggi.</p>
-    </div>
-  </div>
 </body>
 </html>

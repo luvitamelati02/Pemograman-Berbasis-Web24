@@ -131,6 +131,7 @@
         <li>Informasi tentang Luvita</li>
         <li>Hobi dan minat Luvita</li>
         <li>Kontak sosial media dan project</li>
+        <li>Berita Karangan AI ^^</li>
       </ul>
     </div>
   </div>

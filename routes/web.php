@@ -25,6 +25,22 @@ Route::get('/berita', function () {
     ]);
 });
 
+Route::get('/berita', function () {
+    return view('berita');
+});
+
+Route::get('/berita1', function () {
+    return view('berita1');
+});
+
+Route::get('/berita2', function () {
+    return view('berita2');
+});
+
+Route::get('/berita3', function () {
+    return view('berita3');
+});
+
 Route::get('/contact', function () {
     return view('contact');
 });
