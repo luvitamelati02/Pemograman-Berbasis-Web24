@@ -44,3 +44,7 @@ Route::get('/berita3', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::get('/mahasiswa', function () {
+    return view('mahasiswa');
+});
