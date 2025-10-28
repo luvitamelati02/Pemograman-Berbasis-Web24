@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Http; 
 use Illuminate\Support\Facades\Route;
+use App\Models\Mahasiswa;
+use Illuminate\Http\Request;
+
+
 
 Route::get('/home', function () {
     return view('home');
@@ -46,5 +50,15 @@ Route::get('/contact', function () {
 });
 
 Route::get('/mahasiswa', function () {
-    return view('mahasiswa');
+    $data = Mahasiswa::all();
+    return view('mahasiswa', compact('data'));
 });
+
+Route::get('/mahasiswa/create', function () {
+    return view('mahasiswa-create');
+})->name('mahasiswa.create');
+
+Route::post('/mahasiswa', function (Request $request) {
+    Mahasiswa::create($request->all());
+    return redirect('/mahasiswa');
+})->name('mahasiswa.store');
