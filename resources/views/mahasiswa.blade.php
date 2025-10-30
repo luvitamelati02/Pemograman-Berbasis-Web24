@@ -22,8 +22,9 @@
     </div>
 
     {{-- Tabel Data --}}
-    <div class="table-responsive">
-        <table class="table table-striped table-bordered text-center align-middle">
+   <div class="table-responsive" style="max-width: 90%; margin: 0 auto; border-radius: 12px; overflow-x: auto;">
+    <table class="table table-striped table-bordered text-center align-middle mb-0" style="table-layout: fixed; word-wrap: break-word; width: 100%;">
+
             <thead class="table-pink">
                 <tr>
                     <th style="width: 5%;">No</th>
@@ -87,7 +88,7 @@
         transition: 0.3s ease;
     }
     .btn-pink:hover {
-        background-color: #ff7fa3;
+        background-color: #e2e2e2ff;
         color: white;
     }
     .table-pink {
