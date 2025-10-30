@@ -62,3 +62,29 @@ Route::post('/mahasiswa', function (Request $request) {
     Mahasiswa::create($request->all());
     return redirect('/mahasiswa');
 })->name('mahasiswa.store');
+
+// Halaman Edit Mahasiswa
+Route::get('/mahasiswa/{id}/edit', function ($id) {
+    $mahasiswa = \App\Models\Mahasiswa::findOrFail($id);
+    return view('mahasiswa-edit', compact('mahasiswa'));
+})->name('mahasiswa.edit');
+
+// Proses Update Data
+Route::put('/mahasiswa/{id}', function (\Illuminate\Http\Request $request, $id) {
+    $mahasiswa = \App\Models\Mahasiswa::findOrFail($id);
+    $mahasiswa->update($request->all());
+    return redirect('/mahasiswa')->with('success', 'Data berhasil diperbarui!');
+})->name('mahasiswa.update');
+
+// Hapus Data Mahasiswa
+Route::delete('/mahasiswa/{id}', function ($id) {
+    $mahasiswa = \App\Models\Mahasiswa::findOrFail($id);
+    $mahasiswa->delete();
+    return redirect('/mahasiswa')->with('success', 'Data berhasil dihapus!');
+})->name('mahasiswa.destroy');
+
+// Halaman daftar mahasiswa
+Route::get('/mahasiswa', function () {
+    $data = Mahasiswa::all();
+    return view('mahasiswa', compact('data'));
+})->name('mahasiswa.index');

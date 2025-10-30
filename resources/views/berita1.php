@@ -143,6 +143,7 @@ nav a.active {
       <a href="http://localhost:8000/profile">Profil</a>
       <a href="http://localhost:8000/berita">Berita</a>
       <a href="http://localhost:8000/contact">Kontak</a>
+       <a href="http://localhost:8000/mahasiswa">Data Mahasiswa</a>
     </nav>
 
   </header>

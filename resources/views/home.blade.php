@@ -105,24 +105,21 @@
 </head>
 <body>
   <header>
-    <h1>HOME - LUVITA</h1>
+    <h1>@yield('title', 'HOME - LUVITA')</h1>
     <nav>
       <a href="http://localhost:8000/profile">Profil</a>
       <a href="http://localhost:8000/berita">Berita</a>
       <a href="http://localhost:8000/contact">Kontak</a>
+      <a href="http://localhost:8000/mahasiswa">Data Mahasiswa</a>
     </nav>
   </header>
 
   <div class="container">
     <div class="card">
       <h2>Halo!</h2>
-      <p>Website ini berisi beberapa halaman, yaitu Home, Profil, Berita, dan Kontak, yang dirancang dengan tampilan interaktif dan colorful agar lebih menarik. 
+      <p>Website ini berisi beberapa halaman, yaitu Home, Profil, Berita, Kontak dan Data Mahasiswa, yang dirancang dengan tampilan interaktif dan colorful agar lebih menarik. 
         <p>Diharapkan melalui tugas ini, Luvita dapat mengasah kemampuannya, serta memahami bagaimana konsep 
             desain dan fungsionalitas dapat diterapkan dalam pembuatan sebuah website.</p>
-            <p>Luvita menyadari bahwa website ini masih jauh dari kata sempurna. Oleh karena itu, kritik dan saran yang membangun 
-            sangat diharapkan untuk pengembangan di masa mendatang.</p>
-            <p>Semoga tugas ini bermanfaat bagi penulis sendiri, dosen pengampu, maupun 
-            teman-teman mahasiswa yang sedang belajar tentang pemrograman berbasis web.</p>
     </div>
 
     <div class="card">

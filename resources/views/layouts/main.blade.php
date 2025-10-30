@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Luvi</title>
+<title>@yield('title', 'Website Luvita')</title>
   <style>
     body {
       margin: 0;
@@ -30,11 +30,6 @@
       font-size: 2.5rem;
       color: #fff;
       text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
-    }
-
-    header p {
-      font-size: 1.2rem;
-      color: #f5f5f5;
     }
 
     nav {
@@ -105,12 +100,13 @@
 </head>
 <body>
   <header>
-    <h1>HOME - LUVITA</h1>
+    <h1>@yield('header_title', 'DATA MAHASISWA')</h1>
     
     <nav>
-      <a href="http://localhost:8000/profile">Profil</a>
-      <a href="http://localhost:8000/berita">Berita</a>
-      <a href="http://localhost:8000/contact">Kontak</a>
+      <a href="{{ url('/profile') }}">Profil</a>
+      <a href="{{ url('/berita') }}">Berita</a>
+      <a href="{{ url('/contact') }}">Kontak</a>
+      <a href="{{ url('/mahasiswa') }}">Data Mahasiswa</a>
     </nav>
   </header>
 
@@ -125,6 +121,7 @@
         <li>Informasi tentang Luvita</li>
         <li>Hobi dan minat Luvita</li>
         <li>Kontak sosial media dan project</li>
+        <li>Data Mahasiswa</li>
       </ul>
     </div>
   </div>

@@ -25,12 +25,24 @@
       padding: 3rem 1rem;
     }
 
-    header img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 5px solid #fff;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    /* 🔵 Foto Profil Lingkaran */
+    .profile-photo {
+      width: 250px;
+      aspect-ratio: 1 / 1;        /* memastikan benar-benar bulet */
+      border-radius: 50%;         /* lingkaran sempurna */
+      object-fit: cover;          /* jaga proporsi wajah */
+      border: 5px solid #fff;     /* bingkai putih */
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+      margin-top: 1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .profile-photo:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     }
 
     header h1 {
@@ -40,42 +52,36 @@
       text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     }
 
-    header p {
-      font-size: 1.1rem;
-      color: #f9f9f9;
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin: 1rem auto;
     }
 
-nav {
-  display: flex;
-  justify-content: center; /* bikin rata tengah horizontal */
-  align-items: center;     /* bikin item rata tengah vertical */
-  gap: 1rem;               /* jarak antar tombol */
-  margin: 1rem auto;
-}
+    nav a {
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 10px 18px;
+      border-radius: 12px;
+      color: #333;
+      font-weight: bold;
+      transition: 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
 
-nav a {
-  text-decoration: none;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 10px 18px;
-  border-radius: 12px;
-  color: #333;
-  font-weight: bold;
-  transition: 0.3s;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
+    nav a:hover {
+      background: #ff6f61;
+      color: #fff;
+      transform: scale(1.08);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
 
-nav a:hover {
-  background: #ff6f61;
-  color: #fff;
-  transform: scale(1.08);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-}
-
-nav a.active {
-  background: #ff6f61;
-  color: #fff;
-}
-
+    nav a.active {
+      background: #ff6f61;
+      color: #fff;
+    }
 
     .container {
       max-width: 800px;
@@ -100,45 +106,20 @@ nav a.active {
       margin-top: 0;
       color: #ff6f61;
     }
-
-    .socials {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 1.5rem;
-      flex-wrap: wrap;
-    }
-
-    .socials a {
-      text-decoration: none;
-      color: white;
-      padding: 10px 15px;
-      border-radius: 10px;
-      font-weight: bold;
-      transition: 0.3s;
-      display: inline-block;
-    }
-
-    .socials a:nth-child(1) { background: #E1306C; } /* IG */
-    .socials a:nth-child(2) { background: #D44638; } /* Email */
-    .socials a:nth-child(3) { background: #1DB954; } /* Spotify */
-    .socials a:nth-child(4) { background: #333333; } /* GitHub */
-
-    .socials a:hover { opacity: 0.8; transform: scale(1.05); }
   </style>
 </head>
 <body>
   <header>
     <h1>PROFIL - LUVITA</h1>
-    <img src="{{ $foto }}" width="300px" />
+    <img src="{{ $foto }}" alt="Foto Luvita" class="profile-photo">
   </header>
 
   <nav>
-      <a href="http://localhost:8000/home">Home</a>
-      <a href="http://localhost:8000/berita">Berita</a>
-      <a href="http://localhost:8000/contact">Kontak</a>
-    </nav>
-  </header>
+    <a href="http://localhost:8000/home">Home</a>
+    <a href="http://localhost:8000/berita">Berita</a>
+    <a href="http://localhost:8000/contact">Kontak</a>
+    <a href="http://localhost:8000/mahasiswa">Data Mahasiswa</a>
+  </nav>
 
   <div class="container">
     <div class="card">
@@ -164,8 +145,6 @@ nav a.active {
         <li>Juara 2 Lomba Baca Puisi Ar - Razy Fest Tahun 2025</li>
       </ul>
     </div>
-
-    
   </div>
 </body>
 </html>
